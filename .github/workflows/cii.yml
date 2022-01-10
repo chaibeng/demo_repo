@@ -45,7 +45,7 @@ jobs:
           python-version: '3.9'
 
       - name: Run Python Script
-        run: python create_script.py
+        run: python create_file.py
 
       - name: List all NEW files
         run: ls
