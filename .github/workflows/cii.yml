@@ -17,7 +17,7 @@ jobs:
   runs-on: ubuntu-latest
   env:
     platform: Azure
-    region: central
+    region: Central
     profile_path: profile/
 
     steps:
