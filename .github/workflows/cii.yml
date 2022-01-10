@@ -36,5 +36,20 @@ jobs:
           echo test, and deploy your project.
 
 
-      - name: Run another script
-        run: echo this is a new command!
+      - name: List all ORIGINAL files
+        run: ls
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Run Python Script
+        run: python create_script.py
+
+      - name: List all NEW files
+        run: ls
+
+# install python
+# create a new file
+# list the files again (prove that python worked)
